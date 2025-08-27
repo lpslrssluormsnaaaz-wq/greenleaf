@@ -1,0 +1,114 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8fff8;
+}
+
+h1, h2, h3 {
+  color: #1a5d1a;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+  background: #1a5d1a;
+  color: white;
+  padding: 15px 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Баннер */
+.hero {
+  background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2eb82e;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #249924;
+}
+
+/* Секции */
+section {
+  padding: 60px 0;
+}
+.products .product-grid, 
+.team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.product-card, .team-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+.product-card img, .team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Контакты */
+.contacts {
+  background: #eafbe7;
+  text-align: center;
+}
+.contacts a {
+  color: #1a5d1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+/* Подвал */
+.footer {
+  background: #1a5d1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
